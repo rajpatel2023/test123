@@ -52,3 +52,7 @@ async def logout(request: Request):
 
 def test_sqrt():
     assert 5 == 5
+
+
+def test_sqrt():
+    assert 5 == 5
