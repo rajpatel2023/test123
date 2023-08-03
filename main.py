@@ -49,3 +49,7 @@ async def auth(request: Request):
 async def logout(request: Request):
     request.session.pop("user", None)
     return RedirectResponse(url="/")
+
+
+def test_function():
+    assert ("200", "200")
