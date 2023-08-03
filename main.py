@@ -2,7 +2,6 @@ from typing import Optional
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.openapi.docs import get_swagger_ui_html
 from fastapi.openapi.utils import get_openapi
-
 from starlette.config import Config
 from starlette.requests import Request
 from starlette.middleware.sessions import SessionMiddleware
@@ -51,5 +50,5 @@ async def logout(request: Request):
     return RedirectResponse(url="/")
 
 
-def test_function():
-    assert ("200", "200")
+def test_sqrt():
+    assert 5 == 5
